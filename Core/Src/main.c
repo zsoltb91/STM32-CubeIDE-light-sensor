@@ -199,7 +199,7 @@ int main(void)
 
 	  HAL_Delay(402);
 
-	  sprintf((char*)result,"Illuminance: %d.%03d\r\n", (int)result[0], frac(result[0]));
+	  sprintf((char*)result,"Illuminance: %d.%03d lux\r\n", (int)result[0], frac(result[0]));
 	  HAL_UART_Transmit(&huart2, result, strlen((char*)result), HAL_MAX_DELAY);
     /* USER CODE END WHILE */
 
